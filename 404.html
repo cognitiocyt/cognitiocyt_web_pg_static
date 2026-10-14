@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CognitioCyT</title>
+    <script>
+        (function () {
+            var langs = navigator.languages || [navigator.language || ''];
+            var lang = 'en';
+            for (var i = 0; i < langs.length; i++) {
+                var l = (langs[i] || '').toLowerCase().slice(0, 2);
+                if (l === 'en' || l === 'es') { lang = l; break; }
+            }
+            var parts = window.location.pathname.split('/').filter(Boolean);
+            var bases = [];
+            for (var n = parts.length; n >= 0; n--) bases.push('/' + parts.slice(0, n).join('/') + (n ? '/' : ''));
+            (function probe(i) {
+                if (i >= bases.length) { window.location.replace('/' + lang + '/'); return; }
+                fetch(bases[i] + lang + '/', {method: 'HEAD'}).then(function (r) {
+                    if (r.ok) window.location.replace(bases[i] + lang + '/'); else probe(i + 1);
+                }, function () { probe(i + 1); });
+            })(0);
+        })();
+    </script>
+</head>
+<body>
+    <a href="/">CognitioCyT</a>
+</body>
+</html>

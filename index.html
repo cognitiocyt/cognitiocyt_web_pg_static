@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CognitioCyT</title>
+    <script>
+        (function () {
+            var langs = navigator.languages || [navigator.language || ''];
+            var lang = 'en';
+            for (var i = 0; i < langs.length; i++) {
+                var l = (langs[i] || '').toLowerCase().slice(0, 2);
+                if (l === 'en' || l === 'es') { lang = l; break; }
+            }
+            window.location.replace('./' + lang + '/');
+        })();
+    </script>
+    <noscript><meta http-equiv="refresh" content="0; url=./en/"></noscript>
+</head>
+<body>
+    <a href="./en/">CognitioCyT</a>
+</body>
+</html>

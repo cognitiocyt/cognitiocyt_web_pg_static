@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+
+
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/base_style.css" rel="stylesheet" type="text/css" crossorigin="">
+    <!-- Added as part of  webflow -->
+   
+   
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+   
+    <!-- jquery. It seems to be NECCESARY ! -->
+       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <!-- bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../static/fonts/webexflaticon/flaticon.css">
+
+
+    <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+    <!-- <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+    -->
+    <!-- AdENd  webflow -->
+    <link href="../static/css/services/style.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/services/responsive.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/da481987c9.js" crossorigin="anonymous"></script>
+  
+
+    
+<link href="../static/css/home_style.css" rel="stylesheet" type="text/css"> 
+    
+    <title>CognitioCyT</title>
+</head>
+<body>
+    	<!-- header Start -->
+        <nav class="nav_bar">
+            <div class="header-top-area bg-primary-color d-none d-lg-block">
+				<div class="container-special-top">
+					<div class="row">
+						<div class="col-lg-6 header-top-left-part">
+							<span class="address-special"><i class="fab fa-whatsapp"></i> +593 95 898 6112</span>
+							<span class="phone"><i class="webexflaticon flaticon-send"></i> info@cognitiocyt.tech </span>
+						</div>
+						<div class="col-lg-6 header-top-right-part text-right">
+							<ul class="social-links">
+
+								<li><a href="https://www.facebook.com/cognitioct/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="https://wa.link/ezit1c" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+
+							</ul>
+							<div class="language">
+                                
+								<a class="language-btn" id="language-dropdown"><i class="webexflaticon flaticon-internet"  ></i> es  </a>
+								<ul class="dropdown-menu" style="min-width: 6rem !important;"  id="language-dropdown-content">
+									
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <li ><a class="dropdown-item-content" href="../en/">English</a></li>
+                                    
+                                    
+                                    
+                                    <li ><a class="dropdown-item-content" href="../es/">español</a></li>
+                                    
+								</ul>
+
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+            <div class="nav_bar_inner" >
+                
+        
+                <div class="nav_bar--left">
+                    <a class="nav--logo" href="../es/" >
+                        <img src="../static/images/logo/cognitiocyt.png" alt ="logo" style="width: 100%;" />
+                    </a>
+                </div>
+        
+                <div class="nav_bar--middle">
+                    <ul class="menu-top-navbar">
+                        <li class="categories-drop-down container-nav">
+                            <div class="wrapper-categories-content">
+                                <a href="../es/" >
+                                    Home
+                                </a>
+                                <!-- <a href='../es/blog/'>
+                                    Blog
+                                </a>
+                                <a href='../es/events/'>
+                                    Eventos  
+                                </a> -->
+                                <a href="../es/software/" >
+                                    Servicios
+                                </a>
+                                <a href="../es/contact_us/">
+                                    Contáctanos     
+                                </a>
+                        
+                            </div>
+                        </li>    
+                    </ul>
+        
+                  
+        
+                    <div class="drop-down-menu-header" id="closeOpenSideBar">
+                        <div class="inner-drop-down-menu-header">
+                            <svg class="openSideBar" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                <path d="M0 1.22426C0 0.98996 -7.45058e-09 1 0.00781229 0.80002H8C8 0.5 8 0.98996 8 1.22426V1.70911C8 1.94341 8 2.5 8 2.13335H0.0078029C0 2.5 0 1.94341 0 1.70911V1.22426Z" fill="#001011"/>
+                                <path d="M9.05991e-06 3.62426C9.05991e-06 3.38996 0 3 0 3.20002H8.00001C8 3 8.00001 3.38996 8.00001 3.62426V4.10911C8.00001 4.34341 8 5 8.00001 4.53335H4.58211e-06C0 5 9.05991e-06 4.34341 9.05991e-06 4.10911V3.62426Z" fill="#001011"/>
+                                <path d="M6.11436e-07 5.60001H0C0 5.5712 2.52257e-07 5.57475 6.11436e-07 5.60001H8V5.74785V6.02425V6.5091V6.77605V6.93334H1.92648e-06C1.05866e-06 7.14131 0 7.26775 0 6.93334H1.92648e-06C2.52919e-06 6.7889 3.03984e-06 6.60513 3.03984e-06 6.5091V6.02425C3.03984e-06 5.85744 1.49911e-06 5.66243 6.11436e-07 5.60001Z" fill="#001011"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0">
+                                <rect width="8" height="8" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+        
+                        </div>
+                    </div>
+                </div>
+        
+                
+        
+            </div>
+        
+        
+             <!-- Compacted Search Bar  -->
+            <nav class="sideNavegat"><!--
+                    <a class="toggle-sideBar">
+                          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 492.004 492.004" style="enable-background:new 0 0 492.004 492.004;" xml:space="preserve">
+                            <g>
+                                <path d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12
+                                    c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028
+                                    c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265
+                                    c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z"/>
+                            </g>
+                        </svg>                  
+                    </a>-->
+                    <div class="menu_Side">
+                        <!--<a class="menu_Side_Close">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 492.004 492.004" style="enable-background:new 0 0 492.004 492.004;" xml:space="preserve">
+                                <g>
+                                    <path d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12
+                                    c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028
+                                    c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265
+                                    c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z"/>
+                                </g>
+                            </svg>
+                        </a>-->
+                        <ul class="SB_pages_links">
+                            <li><a href="../es/">Home</a></li>
+                            <!-- <li><a href='../es/blog/'>Blog</a></li>
+                            <li><a href='../es/events/'>Eventos</a></li> -->
+                            <li><a href="../es/contact_us/">Contáctanos  </a></li>
+        
+                        </ul>
+                        <nav class="social_media">
+                            <ul class="social_media_links">
+                                <li>
+                                    <a href="https://www.facebook.com/cognitioct/" target="_blank" class="facebook-link">
+                                        <svg width="30" height="30" viewBox="0 0 107 162" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M78.1922 26.9998H102.884C105.157 26.9998 107 25.4887 107 23.6247V3.37478C107 1.51115 105.157 0 102.884 0H78.1922C53.2021 0.0224648 32.9503 16.6306 32.9233 37.1248V60.7499H4.1155C1.84266 60.7499 0 62.261 0 64.125V84.3749C0 86.2389 1.84266 87.7501 4.1155 87.7501H32.9233V158.625C32.9233 160.489 34.7659 162 37.0388 162H61.731C64.0039 162 65.8465 160.489 65.8465 158.625V87.7501H94.6543C96.4248 87.7491 97.9962 86.8192 98.5556 85.4415L106.786 65.1916C107.505 63.4232 106.339 61.5121 104.182 60.923C103.764 60.8087 103.326 60.7502 102.885 60.7499H65.8465V37.1248C65.8461 31.533 71.3737 26.9998 78.1922 26.9998Z" fill="black"/>
+                                        </svg>            
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="twitter-link">
+                                        <svg width="30" height="30" viewBox="0 0 162 162" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M161.069 32.0676C159.992 30.7585 158.258 30.4183 156.843 31.2378C155.388 31.9725 153.883 32.5774 152.342 33.0464C154.746 29.6273 156.561 25.744 157.695 21.5916C158.195 19.5022 157.076 17.3581 155.196 16.8029C154.192 16.5063 153.122 16.7173 152.272 17.3794C146.917 20.6007 141.225 23.0755 135.325 24.7472C123.179 12.0038 104.678 10.4154 90.9151 20.9343C80.3137 28.9021 74.4773 42.6731 75.7009 56.8328C52.7202 54.6561 31.5766 41.9975 17.2955 21.8658C16.5618 20.8793 15.4518 20.3361 14.3018 20.4018C13.1357 20.4796 12.0805 21.1953 11.4845 22.3121C6.63765 31.1192 5.23344 41.7431 7.59646 51.7277C8.80817 56.8578 10.8853 61.6854 13.7174 65.9542C12.4417 65.2598 11.2412 64.4061 10.1394 63.4097C8.62889 62.0477 6.41115 62.3046 5.18557 63.9837C4.67711 64.6806 4.39911 65.5504 4.39878 66.4478C4.60811 80.9326 11.7635 94.1895 23.1629 101.211C21.625 101.001 20.1069 100.64 18.6267 100.131C16.7642 99.5078 14.8001 100.681 14.2398 102.751C13.9954 103.655 14.0526 104.626 14.4006 105.486C19.3481 117.806 29.2393 126.804 41.0818 129.758C29.7989 136.834 16.8068 139.807 3.92697 138.261C2.25698 138.023 0.674811 139.152 0.172625 140.938C-0.345078 142.711 0.332427 144.643 1.79276 145.558C17.5632 155.974 35.5036 161.64 53.8448 162C71.4408 161.928 88.6263 156.086 103.249 145.206C131.162 124.614 148.56 87.6423 146.137 54.5625C152.105 49.6515 157.283 43.6531 161.45 36.8208C162.306 35.3234 162.15 33.3731 161.069 32.0676Z" fill="black"/>
+                                        </svg>
+                                    </a>
+                                </li>
+ 
+                            </ul>
+                            <small>
+                                Todos los derechos reservados CognitioCyT
+                            </small>
+                        </nav>
+                    </div> 
+            </nav>
+        </nav>
+	<!-- header End -->
+
+
+    
+
+<div class="body-container-content">
+
+<!-- SECTION  landing image -->
+    <section class="principal">
+        <div class="fullscreen-video-wrap">
+            <img src="../static/images/world3.jpg" alt="hand touching world"></img>
+        </div>
+        <div class="overlay-video"></div>
+        <div class="principal-main-infromation container">
+            <div class="row-text">
+                <div class="row-text-left">
+                    <svg class="logoRotatingImage" width="124" height="124" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="rotatingImage"clip-path="url(#clip0)">
+                        <path d="M108.966 43.8977C110.48 42.3842 110.481 39.9339 108.967 38.4196C108.967 38.4204 108.966 38.4193 108.966 38.4193C108.235 37.6877 107.262 37.2846 106.227 37.2846C102.763 37.2846 101.071 41.4811 103.488 43.8975C104.999 45.4077 107.456 45.408 108.966 43.8977ZM115.723 31.6629C116.53 32.4699 116.53 33.7779 115.723 34.5847C114.916 35.3914 113.608 35.3912 112.801 34.5847C109.168 30.9514 103.288 30.9507 99.654 34.5844C98.847 35.3914 97.539 35.3912 96.7322 34.5847C95.9255 33.7779 95.9252 32.4699 96.7322 31.6632C101.979 26.4151 110.474 26.4141 115.723 31.6629V31.6629ZM121.932 27.5204C121.403 27.5204 120.874 27.3187 120.471 26.9153C112.599 19.043 99.8572 19.0417 91.9841 26.9153C91.1774 27.7218 89.8694 27.7218 89.0626 26.9153C88.2556 26.1086 88.2556 24.8006 89.0626 23.9935C98.55 14.5062 113.905 14.5059 123.393 23.9935C124.698 25.2992 123.755 27.5204 121.932 27.5204V27.5204ZM113.179 51.3845C112.051 51.5575 111.277 52.6122 111.451 53.74C116.382 85.8695 92.0959 114.722 60.171 115.93V64.0661H87.4031C86.7797 82.8261 77.7902 96.5773 70.2038 104.91C68.9911 106.241 69.9543 108.366 71.7308 108.366C72.2919 108.366 72.8513 108.139 73.2591 107.691C81.338 98.8184 90.9163 84.1454 91.5387 64.0661H101.49C102.631 64.0661 103.556 63.1411 103.556 62.0002C103.556 60.8593 102.631 59.9342 101.49 59.9342H91.5374C90.7192 33.1803 74.1443 15.9559 65.0337 8.47356C71.8602 9.35521 78.4782 11.5314 84.4746 14.8958C85.4699 15.4549 86.7291 15.1001 87.2874 14.1048C87.8458 13.1098 87.4917 11.8506 86.4964 11.2923C77.8713 6.45305 68.0536 3.89514 58.105 3.89514C25.9905 3.89514 -7.62939e-06 29.8828 -7.62939e-06 62.0002C-7.62939e-06 94.1085 25.9807 120.101 58.0981 120.105C93.6506 120.105 120.964 88.4816 115.534 53.1132C115.361 51.9852 114.306 51.2105 113.179 51.3845V51.3845ZM56.0391 114.087C52.9882 111.791 48.1396 107.702 43.3753 101.859C34.1441 90.5362 29.2508 77.8308 28.8067 64.0659H56.0391V114.087ZM72.8443 22.1453C82.0704 33.468 86.9602 46.1721 87.4036 59.9342H60.171V9.90372C63.2206 12.1993 68.0756 16.2924 72.8443 22.1453ZM56.0391 8.07044V59.9342H28.8074C29.4117 41.7931 37.8687 28.3734 45.0079 20.2085C45.7589 19.3495 45.6713 18.0444 44.8127 17.2934C43.9535 16.5422 42.6486 16.6297 41.8973 17.4889C34.291 26.1881 25.2757 40.5132 24.6722 59.9342H4.17529C5.23952 31.8132 27.918 9.13441 56.0391 8.07044V8.07044ZM4.17529 64.0661H24.6727C25.4929 90.8309 42.0804 108.054 51.1939 115.532C25.3539 112.215 5.17754 90.553 4.17529 64.0661V64.0661Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="124" height="124" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                    <h1 class="heading-large" style="color: white; "> Ciencia, Tecnología e Innovación.</h1>
+                    <p class="rew-text-description">
+                      Ready to unlock the full potential of your ideas? Discover the power of our expert software solutions and consultancy services.  
+                    </p>
+                </div>
+                <div class="row-text-right">
+                    <img src="../static/images/indexImg/img_sci_tech.png" alt="40 en el mercado">
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!-- SECTION  services -->
+    <!-- Content sub-section - service 1 -->
+    <section >
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center"  >
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"  ><img class="img-fluid rounded-circle" src="../static/images/indexImg/software.svg" alt="..."  /></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4 tytle-description ">Desarrollo de Software</h2>
+                        <p class="description" >From websites to complex information systems. We design custom software for you. We take care of the complexity of the system, creative design, data migration and integration with other systems of your project.  </p>
+                        <a   type="button" class="btn btn-primary"  href="../es/software/" style='padding:10px 20px;'>
+                            Ver Más  
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Content sub-section - service 2-->
+     <section>
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="p-5"><img class="img-fluid rounded-circle" src="../static/images/indexImg/consult.svg"alt="..." /></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-5">
+                        <h2 class="display-4 tytle-description">Training & Education Programs</h2>
+                        <p class="description" > Is your team in need of training? Are you searching for a partner to boost your team's skills? Whether you require assistance in organizing workshops or creating educational materials, rest assured, we are here to support you. </p>
+                        <a   type="button" class="btn btn-primary"  href="../es/training/" style='padding:10px 20px;'>
+                            Ver Más 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content sub-section - service 3-->
+    <section>
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><img class="img-fluid rounded-circle" src="../static/images/indexImg/technical_support.svg" alt="..." /></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4 tytle-description "> Consultorias </h2>
+                        <p  class="description" >  Are you looking for expert guidance and support in the field of digital technology? We are here to provide comprehensive consulting services tailored to your specific needs.</p>
+                        <a   type="button" class="btn btn-primary"  href="../es/consulting/" style='padding:10px 20px;'>
+                            Ver Más 
+                        </a>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- SECTION  three last events. -->
+    
+
+
+
+
+
+
+<!-- SECTION  three last blogs -->
+    
+
+
+
+
+    <!-- SECTION  all research fields -->
+    <!-- TODO uncomment and change for partners -->
+    <!-- <section class="services container graphic ">
+        <section class="upper-services space ">
+            <div class="inner-upper-services ">
+                <h2 class="tytle-description color-services ">Campos de investigación</h2>
+                <div class="row-services row1 ">
+                    <div class="services-product right-product ">
+                        <div class="services-product-inner ">
+                        <p class="info-services heading-small ">
+                            Agricultura de precisión
+                        </p> 
+                        <svg width="30 " height="30 " viewBox="0 0 30 30 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                            <path d="M20.2195 0C20.2195 0 22.8698 6.48375 11.5111 10.8389C5.3391 13.2046 0.598607 19.2684 6.25875 28.6353C6.7275 24.4485 8.73748 15.2169 17.3803 13.1104C17.3803 13.1104 9.33608 16.1183 8.62548 29.7341C12.7589 30.3144
+                                    22.4531 30.7043 25.3312 22.2917C29.1318 11.1768 20.2195 0 20.2195 0Z " fill="#131313 "/>
+                            <path d="M8.62923 29.6774C17.4042 26.1754 23.789 17.9714 24.6703 8.17779C22.8764 3.33887 20.2195 0 20.2195 0C20.2195 0 22.8698 6.48375 11.5111 10.8389C5.3391 13.2046 0.598606 19.2684 6.25875 28.6353C6.7275 24.4485 8.73748
+                                    15.2169 17.3803 13.1104C17.3798 13.1104 9.35953 16.1109 8.62923 29.6774Z " fill="#191A19 "/>
+                            <path d="M5.38314 11.055C5.83619 11.055 6.20347 10.6877 6.20347 10.2347C6.20347 9.78161 5.83619 9.41434 5.38314 9.41434C4.93008 9.41434 4.56281 9.78161 4.56281 10.2347C4.56281 10.6877 4.93008 11.055 5.38314 11.055Z
+                                    " fill="#191A19 "/>
+                            <path d="M15.8718 5.89873C16.6161 5.89873 17.2195 5.29537 17.2195 4.55109C17.2195 3.80681 16.6161 3.20345 15.8718 3.20345C15.1276 3.20345 14.5242 3.80681 14.5242 4.55109C14.5242 5.29537 15.1276 5.89873 15.8718 5.89873Z
+                                    " fill="#191A19 "/>
+                            <path d="M7.96124 10.0003C8.28484 10.0003 8.54717 9.73794 8.54717 9.41434C8.54717 9.09074 8.28484 8.82841 7.96124 8.82841C7.63764 8.82841 7.37531 9.09074 7.37531 9.41434C7.37531 9.73794 7.63764 10.0003 7.96124 10.0003Z
+                                    " fill="#191A19 "/>
+                            <path d="M7.43393 5.3128C8.24293 5.3128 8.89875 4.65698 8.89875 3.84798C8.89875 3.03898 8.24293 2.38316 7.43393 2.38316C6.62494 2.38316 5.96912 3.03898 5.96912 3.84798C5.96912 4.65698 6.62494 5.3128 7.43393 5.3128Z
+                                    " fill="#191A19 "/>
+                            <path d="M11.9456 7.65656C12.2045 7.65656 12.4144 7.44669 12.4144 7.18781C12.4144 6.92892 12.2045 6.71906 11.9456 6.71906C11.6867 6.71906 11.4769 6.92892 11.4769 7.18781C11.4769 7.44669 11.6867 7.65656 11.9456 7.65656Z
+                                    " fill="#191A19 "/>
+                        </svg>
+                        </div>
+                    </div>
+                    <div class="services-product left-product ">
+                        <div class="services-product-inner middle ">
+                        <p class="info-services heading-small ">
+                            Drones & Aeroespacial
+                        </p> 
+                        <svg height="512pt " viewBox="0 0 512 512 " width="512pt " xmlns="http://www.w3.org/2000/svg "><path d="m481.347656 30.53125c-40.753906-40.710938-107.0625-40.707031-147.8125 0l-.011718.007812c0 .003907 0 .003907-.003907.007813
+                                    0 0-.003906.003906-.003906.007813-19.734375 19.722656-30.601563 45.941406-30.605469 73.828124 0 20.675782 5.972656 40.429688 17.101563 57.304688l-20.625 16.835938-89.605469.003906-20.160156-13.441406c12.628906-17.59375
+                                    19.4375-38.625 19.4375-60.703126 0-27.886718-10.867188-54.109374-30.601563-73.832031-.003906 0-.007812-.003906-.007812-.003906l-.015625-.015625c-40.75-40.710938-107.0625-40.707031-147.8125 0-19.746094 19.726562-30.621094
+                                    45.953125-30.621094 73.851562 0 27.890626 10.867188 54.109376 30.601562 73.835938.003907 0 .003907.003906.007813.003906 0 .003906.003906.003906.003906.003906.003907.003907.003907.007813.007813.011719 20.378906 20.355469
+                                    47.144531 30.53125 73.910156 30.53125 22.660156 0 45.324219-7.296875 64.105469-21.886719l24.722656 16.820313v37.136719h122.484375v-37.160156l24.175781-19.480469c19.398438 16.378906 43.410157 24.570312 67.421875 24.570312
+                                    26.765625 0 53.53125-10.175781 73.90625-30.53125l.011719-.011719c.003906-.003906.007813-.007812.007813-.007812 19.734374-19.722656 30.601562-45.945312 30.601562-73.832031.003906-27.902344-10.871094-54.128907-30.621094-73.855469zm-451.347656
+                                    73.851562c0-19.875 7.75-38.5625 21.820312-52.621093 14.53125-14.515625 33.621094-21.773438 52.707032-21.773438 14.308594 0 28.617187 4.078125 41.003906 12.234375l-22.136719 22.117188c-16.417969-7.703125-36.628906-4.789063-50.175781
+                                    8.742187-8.367188 8.359375-12.976562 19.476563-12.976562 31.304688 0 6.625 1.445312 13.027343 4.191406 18.847656l-22.148438 22.125c-7.996094-12.054687-12.285156-26.1875-12.285156-40.976563zm127.238281 52.625c-25.425781
+                                    25.390626-64.796875 28.574219-93.710937 9.539063l22.136718-22.117187c5.957032 2.796874 12.410157 4.191406 18.867188 4.191406 11.335938 0 22.679688-4.3125 31.308594-12.933594 8.371094-8.363281 12.980468-19.476562 12.980468-31.304688
+                                    0-6.625-1.449218-13.027343-4.191406-18.851562l22.148438-22.125c7.992187 12.058594 12.28125 26.1875 12.28125 40.976562 0 19.878907-7.75 38.566407-21.820313 52.625zm250.203125 21.769532c-19.085937 0-38.179687-7.257813-52.707031-21.769532-14.074219-14.058593-21.824219-32.746093-21.824219-52.625
+                                    0-14.789062 4.292969-28.917968 12.285156-40.972656l22.148438 22.125c-2.746094 5.820313-4.191406 12.222656-4.191406 18.847656 0 11.828126 4.609375 22.945313 12.976562 31.304688 8.632813 8.625 19.972656 12.933594 31.3125
+                                    12.933594 6.453125 0 12.90625-1.394532 18.863282-4.1875l22.140624 22.113281c-12.386718 8.15625-26.695312 12.234375-41.003906 12.230469zm62.246094-33.417969-22.148438-22.125c2.742188-5.820313 4.191407-12.226563 4.191407-18.851563
+                                    0-11.824218-4.609375-22.941406-12.976563-31.304687-13.550781-13.527344-33.757812-16.441406-50.175781-8.738281l-22.140625-22.117188c12.386719-8.15625 26.695312-12.234375 41.003906-12.234375 19.085938 0 38.175782 7.257813
+                                    52.707032 21.773438 14.070312 14.054687 21.820312 32.746093 21.820312 52.621093.003906 14.789063-4.289062 28.921876-12.28125 40.976563zm0 0 "/><path d="m481.378906 333.761719c-38.996094-38.949219-101.390625-40.628907-142.402344-5.039063l-23.082031-22.871094-.050781-35.007812h-122.484375v35.007812l-24.632813
+                                    19.316407c-40.96875-31.875-100.425781-29.011719-138.074218 8.59375-.003906.003906-.007813.007812-.011719.011719 0 0 0 .003906-.003906.003906 0 0-.003907.003906-.003907.007812-19.738281 19.722656-30.6054682 45.941406-30.6054682
+                                    73.832032 0 27.898437 10.8750002 54.125 30.6250002 73.851562 20.375 20.355469 47.140625 30.53125 73.90625 30.53125s53.53125-10.175781 73.90625-30.53125l.011718-.007812s.003907-.003907.003907-.003907c0-.003906.003906-.007812.007812-.007812
+                                    19.734375-19.726563 30.601563-45.945313 30.601563-73.832031 0-22.125-6.839844-43.195313-19.519532-60.808594l18.710938-13.617188h91.523438l19.519531 16.222656c-10.667969 16.628907-16.382813 37.976563-16.382813 58.199219
+                                    0 27.902344 10.875 54.128907 30.621094 73.855469 20.375 20.355469 47.140625 30.53125 73.90625 30.53125s53.53125-10.175781 73.910156-30.53125c19.746094-19.726562 30.621094-45.953125 30.621094-73.851562 0-27.898438-10.875-54.128907-30.621094-73.855469zm-429.527344
+                                    126.476562c-14.070312-14.054687-21.820312-32.746093-21.820312-52.621093 0-14.789063 4.289062-28.921876 12.28125-40.976563l22.148438 22.125c-2.742188 5.820313-4.191407 12.222656-4.191407 18.851563 0 11.824218 4.609375 22.941406
+                                    12.980469 31.304687 8.632812 8.625 19.96875 12.933594 31.308594 12.933594 6.453125 0 12.910156-1.398438 18.863281-4.195313l22.140625 22.117188c-28.917969 19.039062-68.289062 15.855468-93.710938-9.539063zm114.953126-11.644531-22.148438-22.125c2.746094-5.824219
+                                    4.191406-12.226562 4.191406-18.851562 0-11.828126-4.609375-22.945313-12.976562-31.304688-13.546875-13.53125-33.757813-16.445312-50.175782-8.742188l-22.140624-22.117187c28.917968-19.03125 68.289062-15.851563 93.710937 9.539063
+                                    14.074219 14.058593 21.824219 32.746093 21.824219 52.625 0 14.789062-4.292969 28.917968-12.285156 40.976562zm166.136718-40.976562c0-19.878907 7.75-38.566407 21.820313-52.625 14.535156-14.515626 33.617187-21.769532 52.707031-21.769532
+                                    14.304688 0 28.617188 4.078125 41.003906 12.230469l-22.140625 22.117187c-16.417969-7.703124-36.625-4.789062-50.171875 8.742188-8.371094 8.359375-12.980468 19.476562-12.980468 31.304688 0 6.625 1.449218 13.027343 4.191406
+                                    18.847656l-22.148438 22.125c-7.992187-12.054688-12.28125-26.183594-12.28125-40.972656zm127.238282 52.621093c-25.425782 25.394531-64.792969 28.574219-93.710938 9.539063l22.136719-22.117188c5.957031 2.796875 12.410156 4.195313
+                                    18.867187 4.195313 11.335938 0 22.675782-4.3125 31.308594-12.933594 8.371094-8.363281 12.980469-19.480469 12.980469-31.304687 0-6.628907-1.449219-13.03125-4.195313-18.851563l22.152344-22.125c7.992188 12.054687 12.28125
+                                    26.1875 12.28125 40.976563 0 19.875-7.75 38.566406-21.820312 52.621093zm0 0 "/></svg>
+                        </div>
+                    </div>
+                    <div class="services-product right-product ">
+                        <div class="services-product-inner ">
+                            <p class="info-services heading-small ">
+                                Automatización en Arquitectura
+                            </p> 
+                            <svg width="30 " height="30 " viewBox="0 0 30 30 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                <path d="M22.9102 20.4629L18.5466 22.9098H22.9102V20.4629Z " fill="black "/>
+                                <path d="M1.75781 24.6677H3.51562V7.08954C3.51562 6.1187 2.72865 5.33173 1.75781 5.33173C0.786973 5.33173 0 6.1187 0 7.08954V25.1566C0.519141 24.8538 1.11463 24.6677 1.75781 24.6677Z " fill="black "/>
+                                <path d="M10.6055 14.1208V22.9098H16.2138L16.0075 21.152H12.3633V19.3942H15.8011L15.4343 16.2691L16.5339 14.1208H10.6055Z " fill="black "/>
+                                <path d="M29.3173 4.62089L29.7171 3.83948C30.3686 2.53571 29.8562 0.943542 28.5747 0.290398C27.2795 -0.37054 25.679 0.135417 25.0196 1.42934L24.6175 2.21491L29.3173 4.62089Z " fill="black "/>
+                                <path d="M23.7718 3.83777L18.5665 14.0082L23.2604 16.4115C23.2884 16.3568 22.816 17.2785 28.4717 6.2438L23.7718 3.83777Z " fill="black "/>
+                                <path d="M17.7658 15.5724L17.2427 16.5944L17.7964 21.315L21.936 18.9942L22.4585 17.9752L17.7658 15.5724Z " fill="black "/>
+                                <path d="M24.668 17.5162V22.9099H26.4258V24.6677H24.668V26.4841H22.9102V24.6677H10.6055V26.4841H8.84766V24.6677H7.08984V22.9099H8.84766V14.1208H7.08984V12.363H8.84766V10.6052H10.6055V12.363H17.4336L20.1328 7.08954H5.27344V26.4841H1.75781C0.786973
+                                    26.4841 0 27.271 0 28.2419C0 29.2126 0.786973 29.9997 1.75781 29.9997H29.9414V7.226L24.668 17.5162Z " fill="black "/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-services row2 ">
+                    <div class="services-product left-product ">
+                        <div class="services-product-inner middle ">
+                        <p class="info-services heading-small ">
+                            Programación y Ciencia de Datos
+                        </p> 
+                        <svg xmlns="http://www.w3.org/2000/svg " height="24 " viewBox="0 0 24 24 " width="24 "><path d="M0 0h24v24H0z " fill="none "/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-5h2v5zm4
+                                    0h-2v-3h2v3zm0-5h-2v-2h2v2zm4 5h-2V7h2v10z "/></svg>
+                        </div>
+                    </div> 
+                    <div class="services-product right-product ">
+                        <div class="services-product-inner ">
+                        <p class="info-services heading-small ">
+                            Trading Automatizado
+                        </p> 
+                        <svg width="30 " height="30 " viewBox="0 0 30 30 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                            <path d="M5.33203 17.6367V15.8789H7.08984V8.84766H5.33203V7.08984H3.57422V8.84766H1.81641V15.8789H3.57422V17.6367H5.33203Z " fill="black "/>
+                            <path d="M12.3633 14.1211V12.3633H14.1211V5.33203H12.3633V3.57422H10.6055V5.33203H8.84766V12.3633H10.6055V14.1211H12.3633Z " fill="black "/>
+                            <path d="M19.3945 12.3633V10.6055H21.1523V3.57422H19.3945V1.81641H17.6367V3.57422H15.8789V10.6055H17.6367V12.3633H19.3945Z " fill="black "/>
+                            <path d="M26.4258 0H24.668V1.75781H22.9102V8.84766H24.668V10.6055H26.4258V8.84766H28.1836V1.75781H26.4258V0Z " fill="black "/>
+                            <path d="M28.3767 17.1612L29.3234 13.1125L25.516 11.4397L24.8087 13.0482L26.2333 13.6743L21.8235 15.8789H14.7923L7.76104 19.3945H0.878906V21.1523H8.17646L15.2077 17.6367H22.239L27.019 15.2471L26.6653 16.7612L28.3767 17.1612Z
+                                    " fill="black "/>
+                            <path d="M28.2422 19.3945H22.9102V28.2422H21.1523V19.3945H15.8789V28.2422H14.1211V20.6091L8.84766 23.2458V28.2422H7.08984V22.9102H1.75781V28.2422H0V30H30V28.2422H28.2422V19.3945Z " fill="black "/>
+                        </svg>
+                        </div>
+                    </div> 
+                    <div class="services-product left-product ">
+                        <div class="services-product-inner ">
+                        <p class="info-services heading-small ">
+                            Innovación y Emprendimiento
+                        </p> 
+                        <svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 24 24 " fill="black " width="18px " height="18px "><path d="M0 0h24v24H0z " fill="none "/><path d="M0 0h24v24H0V0z " fill="none "/><path d="M17 16l-4-4V8.82C14.16 8.4 15 7.3
+                                    15 6c0-1.66-1.34-3-3-3S9 4.34 9 6c0 1.3.84 2.4 2 2.82V12l-4 4H3v5h5v-3.05l4-4.2 4 4.2V21h5v-5h-4z "/></svg>
+                        </div>
+                    </div> 
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="bottom-services ">
+            <div class="bottom-services-inner ">
+                <div class="newletter-blog ">
+                    <div class="image-promotion ">
+                        <a class="link-image-promotion ">
+                            <img src="../static/images/logo/cognitiocyt.png ">
+                        </a>
+                    </div>
+                    <p class="text-newsletter "> We organize multiple events internationally throughout the year. Do you want to be part of this initiative?</p>
+                    <a class="load-more add-new " href="../es/contact_us/"  >  Contáctanos   </a> 
+                </div>
+          
+            </div>
+        </section>
+    </section> -->
+
+
+
+<!-- SECTION Social media  -->
+    <section class="social-media-sec space ">
+        <div class="third-inner container ">
+            <div class="sub-sec-slider ">
+                <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+                    <ol class="carousel-indicators ">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active "></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active ">
+                            <img class="d-block w-100 " src="../static/images/indexImg/slider-1-community.jpg " alt="First slide ">
+                            <!-- <div class="carousel-caption d-none d-md-block ">
+                                <h5>Ciencia y Teconologia</h5>
+                                <p>Desde los mas pequeños hasta los mas grandes.</p>
+                            </div> -->
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="d-block w-100 " src="../static/images/indexImg/slider-2-kids.jpg " alt="Second slide ">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev " href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+                        <span class="sr-only ">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next " href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon " aria-hidden="true "></span>
+                        <span class="sr-only ">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sub-sec-social">
+                <h3 class="heading-medium ">#cognitiocyt</h3>
+
+                <div class="card" style="width: 18rem; height: 20rem; text-align: center; ">
+                    <ul class="inside-social-sec ">
+                        <li>
+                            <a href="https://www.facebook.com/cognitioct/" target="_blank" class="facebook-link ">
+                                <svg width="25 " height="25 " viewBox="0 0 107 162 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                    <path d="M78.1922 26.9998H102.884C105.157 26.9998 107 25.4887 107 23.6247V3.37478C107 1.51115 105.157 0 102.884 0H78.1922C53.2021 0.0224648 32.9503 16.6306 32.9233 37.1248V60.7499H4.1155C1.84266 60.7499 0 62.261 0
+                                    64.125V84.3749C0 86.2389 1.84266 87.7501 4.1155 87.7501H32.9233V158.625C32.9233 160.489 34.7659 162 37.0388 162H61.731C64.0039 162 65.8465 160.489 65.8465 158.625V87.7501H94.6543C96.4248 87.7491 97.9962 86.8192 98.5556
+                                    85.4415L106.786 65.1916C107.505 63.4232 106.339 61.5121 104.182 60.923C103.764 60.8087 103.326 60.7502 102.885 60.7499H65.8465V37.1248C65.8461 31.533 71.3737 26.9998 78.1922 26.9998Z " fill="black "/>
+                                </svg>            
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.link/ezit1c" target="_blank" class="whatsapp-link ">
+                                <svg width="25 " height="25 " viewBox="0 0 308 308" fill="#000000 " version="1.1" id="Layer_1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg ">
+                                    <g id="XMLID_468_">
+                                        <path id="XMLID_469_" d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156
+                                            c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687
+                                            c-0.201,0-3.676-1.431-4.728-1.888c-24.087-10.463-42.37-35.624-44.877-39.867c-0.358-0.61-0.373-0.887-0.376-0.887
+                                            c0.088-0.323,0.898-1.135,1.316-1.554c1.223-1.21,2.548-2.805,3.83-4.348c0.607-0.731,1.215-1.463,1.812-2.153
+                                            c1.86-2.164,2.688-3.844,3.648-5.79l0.503-1.011c2.344-4.657,0.342-8.587-0.305-9.856c-0.531-1.062-10.012-23.944-11.02-26.348
+                                            c-2.424-5.801-5.627-8.502-10.078-8.502c-0.413,0,0,0-1.732,0.073c-2.109,0.089-13.594,1.601-18.672,4.802
+                                            c-5.385,3.395-14.495,14.217-14.495,33.249c0,17.129,10.87,33.302,15.537,39.453c0.116,0.155,0.329,0.47,0.638,0.922
+                                            c17.873,26.102,40.154,45.446,62.741,54.469c21.745,8.686,32.042,9.69,37.896,9.69c0.001,0,0.001,0,0.001,0
+                                            c2.46,0,4.429-0.193,6.166-0.364l1.102-0.105c7.512-0.666,24.02-9.22,27.775-19.655c2.958-8.219,3.738-17.199,1.77-20.458
+                                            C233.168,179.508,230.845,178.393,227.904,176.981z"/>
+                                        <path id="XMLID_470_" d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716
+                                            c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396
+                                            c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z
+                                            M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188
+                                            l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677
+                                            c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867
+                                            C276.546,215.678,222.799,268.994,156.734,268.994z"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="card-body " style="padding:0px; margin-top: 15px; ">
+                      <p class="text-newsletter  "> Empowering our community through digital innovation. We're here to make a positive impact and drive progress together in our community. </p>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+</div>
+
+<script type= "text/javascript " src="../static/js/javaIndex.js "></script>
+
+
+
+
+    <!-- Log In  -->
+    <div id="login_popup" class='modal' >
+        
+        <form  method="POST" enctype="multipart/form-data"  class="modal-content animate"  id='upload_login' >
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('login_popup').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
+            </div>
+            
+            <div class="container_popup">
+                <label for="uname"><b>Usuario</b></label>
+                <input id='user_email' type="text" placeholder="Enter Username" name="uname"  required>
+            
+                <label for="psw"><b>Contraseña</b></label>
+                <input id='user_password' type="password" placeholder="Enter Password" name="psw" required>
+                    
+                <button id='login_button' type="submit" >Cuenta</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Recuérdame
+                </label>
+            </div>
+            
+            <div class="container_popup" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('login_popup').style.display='none'" class="cancelbtn">Cancelar</button>
+                <span class="psw">Olvidaster <a href="#">la contraseña?</a></span>
+            </div>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- End Log In  -->
+
+<!-- Footer Area Start -->
+	<footer class="footer">
+		<!-- TODO: fix background image in footer -->
+		<div class="footer-main-area" data-background="../static/images/indexImg/footer-bg.png">
+			<div class="container-special">
+				<div class="row">
+					<div class="col-xl-4 col-lg-6 col-md-6">
+						<div class="widget footer-widget">
+							<img  style='padding:10px;' src="../static/images/logo/white_logo.png" alt="logo" class="mrb-20">
+							<address class="mrb-25">
+								<div class="mrb-10"><a href="#" class="text-light-gray"><i class="fas fa-phone-alt mrr-10"></i>+593 95 898 6112</a></div>
+								<div class="mrb-10"><a href="#" class="text-light-gray"><i class="fas fa-envelope mrr-10"></i>info@cognitiocyt.tech</a></div>
+							</address>
+							<ul class="social-list">
+								<li><a href="https://www.facebook.com/cognitioct/" target="_blank" ><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="https://wa.link/ezit1c" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-6 col-md-6">
+						<div class="row">
+							<div class="col-6">
+								<div class="widget footer-widget">
+									<h5 class="widget-title text-white mrb-30">Servicios</h5>
+									<ul class="footer-widget-list">
+										<li><a href="../es/software/" >Desarrollo de Software</a></li>
+										
+										<li><a href="../es/training/" >Training & Education Programs</a></li>
+										<li><a href="../es/consulting/" >Consultorias</a></li>
+									
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-6">
+								<div class="widget footer-widget">
+									<h5 class="widget-title text-white mrb-30">Enlaces</h5>
+									<ul class="footer-widget-list">
+										<li><a href='../es/blog/'> Blog</a></li>	
+										<li><a href='../es/events/'>Eventos</a></li>		
+										<li><a href="../es/contact_us/">Contact </a></li>							
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-6 col-md-12">
+						<div class="widget footer-widget">
+							<h5 class="widget-title text-white mrb-30">Boletin informativo</h5>
+							<p class="text-light-gray">¡Suscribete! Todas las semanas te enviamos boletines informativos de los ultimos aconteciemientos en ciencia y tecnología. </p>
+							<input type="text" class="form-control" placeholder="Correo electrónico" >
+							<a href="" class="cs-btn-one btn-primary-color btn-sm has-icon mrt-20"><i class="webexflaticon flaticon-send"></i>Enviar</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom-area">
+			<div class="container footer-border-top pdt-30 pdb-10">
+				<div class="row">
+					<div class="col-xl-12">
+						<div class="text-center">
+							<span class="text-light-gray">Copyright © 2024 by <a class="text-primary-color" target="_blank" href="https://cognitiocyt.tech">CognitioCyT</a> | Todos los derechos reservados </span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/jquery-core-plugins.js"></script>
+    
+   
+
+    <script>
+        (function() {
+            // hold onto the drop down menu                                             
+            var dropdownMenu;
+
+            // and when you show it, move it to the body                                     
+            $(window).on('show.bs.dropdown', function(e) {
+
+                // grab the menu        
+                dropdownMenu = $(e.target).find('.dropdown-menu');
+
+                // detach it and append it to the body
+                $('body').append(dropdownMenu.detach());   
+
+                // grab the new offset position
+                var eOffset = $(e.target).offset();
+
+                // make sure to place it where it would normally go (this could be improved)
+                dropdownMenu.css({
+                    'display': 'block',
+                    'top': eOffset.top + $(e.target).outerHeight(),
+                    'left': eOffset.left
+                });                                                
+            });
+
+            // and when you hide it, reattach the drop down, and hide it normally                                                   
+            $(window).on('hide.bs.dropdown', function(e) {        
+                $(e.target).append(dropdownMenu.detach());        
+                dropdownMenu.hide();                              
+            });                                                   
+        })(); 
+
+        function close_signin(){
+            
+            document.getElementById('login_popup').style.visibility = "hidden";
+        }
+        function pop_login(){
+            
+            console.log('you cliked in pop sign in ')
+            document.getElementById('login_popup').style.display = "block";
+            
+    
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) 
+        {
+            var modal = document.getElementById('login_popup');
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+                $('#language-dropdown-content').css({"display":"none"});
+            } 
+        } 
+        $('#closeOpenSideBar').on('click', function (event) {
+            if($('.sideNavegat').css('display') == 'none'){
+                $('.sideNavegat').css({"display":"block"});
+            }else{
+                $('.sideNavegat').css({"display":"none"});
+            }
+        });
+        $('#controlArticles').on('click', function (event) {
+            if($(window).width() <= 992){
+                if($('#articlesOpenClose').css('display') == 'none'){
+                    $('#articlesOpenClose').css({"display":"block"});
+                }else{
+                    $('#articlesOpenClose').css({"display":"none"});
+                }
+            }
+        });
+        $('#controlEvents').on('click', function (event) {
+            if($(window).width() <= 992){
+                if($('#eventsOpenClose').css('display') == 'none'){
+                    $('#eventsOpenClose').css({"display":"block"});
+                }else{
+                    $('#eventsOpenClose').css({"display":"none"});
+                }
+            }
+        });
+        $('#controlContact').on('click', function (event) {
+            if($(window).width() <= 992){
+                if($('#contactOpenClose').css('display') == 'none'){
+                    $('#contactOpenClose').css({"display":"block"});
+                }else{
+                    $('#contactOpenClose').css({"display":"none"});
+                }
+            }
+        });
+        $('#language-dropdown').on('click', function(event){
+            if($('#language-dropdown-content').css('display') == 'none'){
+                $('#language-dropdown-content').css({"display":"block"});
+            }else{
+                $('#language-dropdown-content').css({"display":"none"});
+            }
+        });
+        
+        $('#login_button').on('click', function (event) {
+            event.preventDefault();
+        });
+    </script>
+<script src="../static/js/static-site.js"></script>
+</body>
+</html>

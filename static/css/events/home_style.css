@@ -1,0 +1,189 @@
+.eventsTitle{
+    font-size: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+.eventsDescription{
+    font-family: 'Raleway', sans-serif;
+}
+.add-new {
+    width: fit-content;
+    border-radius: 22px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    padding: 5px 16px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px;
+    border: solid #505050 2px;
+    color: #505050;
+    text-decoration: none;
+   
+}
+
+.add-new:hover{
+    background-color: #505050;
+    color: white;
+    text-decoration: none;
+}
+.elementEvent{
+    padding: 15px 15px 15px 15px;
+    max-width: 378px;
+    width: 378px;
+    
+}
+.containerEvents{
+    margin: 0 auto;
+    padding: 48px 32px 0 32px;
+    max-width: 443px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+@media (min-width: 600px){
+    .containerEvents {
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(100% - 64px);
+        min-width: 568px;
+        max-width: 790px;
+    }
+    .elementEvent{
+        min-width: 378px;
+    }
+    
+}
+@media (max-width: 600px){
+    .elementEvent{
+        width: 100%;
+        min-width: 100%;
+        max-width: 359px;
+        padding: 0 0 25px 0;
+
+    }
+    .innerContainerEvents{
+        margin: 0 0;
+    }
+    .containerEvents{
+        padding: 48px 16px 0 16px;
+    }
+}
+@media (min-width: 1200px){
+    .containerEvents {
+        max-width: 1200px;
+    }
+}
+.innerContainerEvents{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    
+}
+.imageEvent{
+    max-width: 100%;
+    height: auto;
+}
+.hero-card-title {
+    width: 100%;
+    padding-bottom: 66.67%;
+    position: relative;
+    background-color: #eaeaea;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.hero-card-title img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    max-height: 100%;
+}
+.card-body-Event{
+    position: relative;
+    padding: 2rem;
+    background-color: white;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    min-height: 1px;
+    padding: 1.25rem;
+    height: 20rem;
+}
+.card-body-Event h2{
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    color: #2c2c2c;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 3.75rem;
+    font-family: 'Raleway', sans-serif;
+}
+@media (min-width: 600px){
+    .card-body-Event h2{
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        margin-bottom: 0.5rem;
+        max-height: unset;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .text-center{
+        padding-top: 6rem!important;
+    }
+}
+.card-text{
+    max-height: 168px;
+    overflow: hidden;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    font-family: 'Raleway', sans-serif;
+}
+.eventsSeeMore{
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.25rem;
+}
+.add-new-event{
+    width: fit-content;
+    border-radius: 10px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    padding: 5px 16px;
+    cursor: pointer;
+    outline: none;
+    border: solid #505050 2px;
+    color: #505050;
+    text-decoration: none;
+}
+.add-new-event:hover{
+    color: white;
+    background-color:#505050;
+    border: solid white 2px;
+}
+.mainContainerEvents{
+    width: 100%;
+    max-width: 1440px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 90px;
+    margin-right: auto;
+    margin-left: auto;
+}
