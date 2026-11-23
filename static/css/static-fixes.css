@@ -37,3 +37,39 @@
         overflow-wrap: break-word;
     }
 }
+
+/* "Aula Virtual" button in the top menu: links to the Moodle site https://aula.cognitiocyt.tech
+   (official orange #E47C24, dark blue #253B80 on hover). Added 2026-11-22. */
+.categories-drop-down a.nav-aula-link {
+    margin-left: 12px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border-bottom: none;
+    background: #E47C24;
+    color: #fff;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.categories-drop-down a.nav-aula-link:hover,
+.categories-drop-down a.nav-aula-link:focus {
+    background: #253B80;
+    color: #fff;
+    border-bottom: none;
+}
+.categories-drop-down a.nav-aula-link i {
+    margin-right: 6px;
+}
+.SB_pages_links .side-aula-link {
+    color: #E47C24;
+    font-weight: 600;
+}
+/* With four menu items the 50%-wide menu box wrapped "Contact Us" onto two lines at 1024px.
+   Let the menu use the free space next to the logo and keep each item on one line. */
+@media (min-width: 64rem) {
+    .nav_bar--middle {
+        width: auto;
+    }
+    .categories-drop-down a {
+        white-space: nowrap;
+    }
+}
