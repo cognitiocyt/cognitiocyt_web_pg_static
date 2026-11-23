@@ -1,0 +1,39 @@
+/* Layout fixes for small screens. Desktop rendering is unchanged. */
+
+/* home_style.css sets .tytle-description to 25px below 48rem, but Bootstrap's .display-4
+   and responsive.css (h2 { font-size: 48px !important } below 425px) won, leaving
+   48px headings wider than the screen. */
+@media (max-width: 768px) {
+    .tytle-description.display-4 {
+        font-size: 25px !important;
+    }
+}
+
+/* Page banner titles ("Software Development", "Contáctanos", ...) */
+@media (max-width: 575.98px) {
+    .page-title-content .title {
+        font-size: 34px;
+        overflow-wrap: break-word;
+    }
+}
+
+/* Contact section: the 100px side padding squeezed the form to ~145px on phones */
+@media (min-width: 992px) {
+    .contact-section-padded {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+/* Very narrow phones (320px): long email address and the events notice */
+@media (max-width: 400px) {
+    .contact-block .contact-details {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+    .innerContainerEvents h2 {
+        font-size: 22px !important; /* responsive.css forces h2 to 48px !important */
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+}

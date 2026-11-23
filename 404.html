@@ -2,7 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CognitioCyT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page not found | CognitioCyT</title>
+    <style>
+        body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+               font-family: Poppins, Arial, sans-serif; background: #f4f4f4; color: #253B80; text-align: center; padding: 16px; }
+        h1 { font-size: 28px; margin: 0 0 8px; }
+        p { margin: 4px 0 20px; color: #444; }
+        a { display: inline-block; padding: 10px 20px; border-radius: 4px; background: #4885F4; color: #fff; text-decoration: none; margin: 4px; }
+    </style>
     <script>
         (function () {
             var langs = navigator.languages || [navigator.language || ''];
@@ -12,10 +20,12 @@
                 if (l === 'en' || l === 'es') { lang = l; break; }
             }
             var parts = window.location.pathname.split('/').filter(Boolean);
+            // a broken /es/... or /en/... link keeps its language
+            if (parts.indexOf('es') !== -1) lang = 'es'; else if (parts.indexOf('en') !== -1) lang = 'en';
             var bases = [];
-            for (var n = parts.length; n >= 0; n--) bases.push('/' + parts.slice(0, n).join('/') + (n ? '/' : ''));
+            for (var n = parts.length - 1; n >= 0; n--) bases.push('/' + parts.slice(0, n).join('/') + (n ? '/' : ''));
             (function probe(i) {
-                if (i >= bases.length) { window.location.replace('/' + lang + '/'); return; }
+                if (i >= bases.length || !window.fetch) return;
                 fetch(bases[i] + lang + '/', {method: 'HEAD'}).then(function (r) {
                     if (r.ok) window.location.replace(bases[i] + lang + '/'); else probe(i + 1);
                 }, function () { probe(i + 1); });
@@ -24,6 +34,10 @@
     </script>
 </head>
 <body>
-    <a href="/">CognitioCyT</a>
+    <main>
+        <h1>Page not found · Página no encontrada</h1>
+        <p>The page you are looking for doesn't exist. · La página que buscas no existe.</p>
+        <a href="/en/">Home</a><a href="/es/">Inicio</a>
+    </main>
 </body>
 </html>
